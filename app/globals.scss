@@ -3,6 +3,7 @@ body {
   color: #ECE7F1;
   font-weight: 400;
   line-height: 1.75;
+  height: 200vh;
 }
 
 * {
@@ -10,8 +11,6 @@ body {
 }
 
 html {font-size: 100%;} /*16px*/
-
-p {margin-bottom: 1rem;}
 
 h1, h2, h3, h4, h5 {
   font-family: 'Poppins', sans-serif;
@@ -22,6 +21,11 @@ h1, h2, h3, h4, h5 {
 h1 {
   margin-top: 0;
   font-size: 3.052rem;
+}
+
+main {
+  width: 100%;
+  padding-top: 52px;
 }
 
 h2 {font-size: 2.441rem;}
