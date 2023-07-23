@@ -19,6 +19,7 @@ const HeroSection = () => {
           <button><FaStar color='#FC9904' size={24} style={{ marginRight: 10 }} /> Give us a Star on GitHub <BsGithub style={{ marginLeft: 10 }} size={24} /></button>
         </span>
       </div>
+      <p>Build your blog with <b>tortaCMS</b> and your favorite <b>framework</b></p>
     </section>
   )
 }

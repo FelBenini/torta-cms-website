@@ -100,4 +100,12 @@
       }
     }
   }
+  & p {
+    color: #D1CBD4;
+    margin-top: 68px;
+    & b {
+      color: #E940F3;
+      font-weight: 800;
+    }
+  }
 }
