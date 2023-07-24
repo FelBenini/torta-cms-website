@@ -28,9 +28,9 @@ const HeroSection = () => {
         <Image src='/frameworks/nextjs.svg' alt='Next' width={26} height={26}/>
         <Image src='/frameworks/remix.svg' alt='Remix' width={24} height={24}/>
         <Image src='/frameworks/gatsby.svg' alt='Gatsby' width={28} height={28}/>
-        <Image src='/frameworks/vue.svg' alt='Vue' width={26} height={26}/>
+        <Image className={styles.svelte} src='/frameworks/vue.svg' alt='Vue' width={26} height={26}/>
         <Image src='/frameworks/nuxt.svg' alt='Nuxt' width={32} height={32}/>
-        <Image src='/frameworks/angular.svg' alt='Angular' width={32} height={32}/>
+        <Image className={styles.angular} src='/frameworks/angular.svg' alt='Angular' width={32} height={32}/>
         <Image className={styles.svelte} src='/frameworks/svelte.svg' alt='Svelte' width={28} height={28}/>
         <Image className={styles.svelte} src='/frameworks/solid.svg' alt='Solid' width={28} height={28}/>
         <Image src='/frameworks/astro.svg' alt='Astro' width={28} height={28}/>

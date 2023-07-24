@@ -58,6 +58,13 @@
         filter: grayscale(0);
       }
     }
+    & .angular {
+      filter: grayscale(1) contrast(0.8) brightness(2.5);
+      transition: all ease 0.2s;
+      &:hover {
+        filter: grayscale(0);
+      }
+    }
     & img {
       filter: grayscale(1) brightness(3) brightness(0.8);
       transition: all ease 0.2s;
