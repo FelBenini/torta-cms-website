@@ -5,4 +5,58 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  padding: 80px 0px;
+  & .cardArea {
+    width: 480px;
+    padding: 0.2rem 1.2rem;
+    max-width: 95%;
+    font-weight: 700;
+    padding-bottom: 1.6rem;
+    & h5 {
+      font-size: 1rem;
+      color: #EB6CF2;
+      font-weight: 700;
+      margin-top: 1.2rem;
+      margin-bottom: 1.2rem;
+      display: flex;
+      align-items: center;
+      & svg {
+        aspect-ratio: 1/1;
+        padding: 5px;
+        border-radius: 100%;
+        background-color: #ef70f844;
+        margin-right: 0.3rem;
+      }
+    }
+    & h6 {
+      color: #D1CBD4;
+      font-weight: 400;
+      &::before {
+        content: '●';
+        margin-right: 0.4rem;
+      }
+    }
+  }
+  & .description {
+    max-width: 95%;
+    margin: 0 auto;
+    height: 300px;
+    width: 420px;
+    & h2 {
+      margin-bottom: 16px;
+      color: #ECE7F1;
+      font-weight: 700;
+    }
+    & p {
+      line-height: 1.6;
+      counter-reset: #D1CBD4;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .aboutSection .cardArea {
+    width: 100%;
+  }
 }

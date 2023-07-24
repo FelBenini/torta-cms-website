@@ -3,7 +3,6 @@ body {
   color: #ECE7F1;
   font-weight: 400;
   line-height: 1.75;
-  height: 200vh;
 }
 
 * {
@@ -37,6 +36,11 @@ main {
   padding-top: 52px;
 }
 
+.darkened {
+  width: 100%;
+  background-color: #141314;
+}
+
 h2 {
   font-size: 2.441rem;
 }
@@ -51,4 +55,8 @@ h4 {
 
 h5 {
   font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 0.75rem;
 }

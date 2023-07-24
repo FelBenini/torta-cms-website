@@ -1,6 +1,7 @@
 .heroSection {
   height: fit-content;
   width: 100%;
+  text-align: center;
   margin-top: -52px;
   display: flex;
   flex-direction: column;
@@ -47,10 +48,12 @@
 
   & .frameworks {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    width: 50%;
-    padding: 0 25%;
+    width: 550px;
+    max-width: 100%;
+    padding: 0 calc(50% - 275px);
     padding-bottom: 44px;
     margin-top: 40px;
     background: linear-gradient(to top, #141314, transparent);
@@ -69,6 +72,7 @@
       }
     }
     & img {
+      margin: 8px 8px;
       filter: grayscale(1) brightness(3) brightness(0.8);
       transition: all ease 0.2s;
       &:hover {

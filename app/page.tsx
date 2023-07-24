@@ -5,7 +5,9 @@ export default function Home() {
   return (
     <>
       <HeroSection />
-      <About />
+      <div className='darkened'>
+        <About />
+      </div>
     </>
   )
 }
