@@ -2,7 +2,7 @@
 import React, { useRef, useState } from 'react'
 import styles from './styles.module.scss'
 
-const Card = ({children}: {children: React.ReactNode}) => {
+const Card = ({children, id}: {children: React.ReactNode, id: string}) => {
   const [xPos, setXPos] = useState(0)
   const [yPos, setYPos] = useState(0)
   const [transition, setTransition] = useState('all 400ms cubic-bezier(0.03, 0.98, 0.52, 0.99) 0s')
@@ -20,8 +20,8 @@ const Card = ({children}: {children: React.ReactNode}) => {
     const y = e.clientY - rect.top - height;
     e.currentTarget.style.setProperty("--mouse-x", `${e.clientX - rect.left}px`)
     e.currentTarget.style.setProperty("--mouse-y", `${e.clientY - rect.top}px`)
-    setXPos(-x / 20)
-    setYPos(-y / 20)
+    setXPos(x / 20)
+    setYPos(y / 20)
   }
   const mouseEnter = () => {
     setTimeout(() => {
@@ -29,7 +29,7 @@ const Card = ({children}: {children: React.ReactNode}) => {
     }, 450)
   }
   return (
-    <div ref={ref} style={{transition: transition, transform: `perspective(1000px) rotateX(${xPos}deg) rotateY(${yPos}deg) scale3d(1, 1, 1)`}} onMouseLeave={mouseLeave} onMouseEnter={mouseEnter} onMouseMove={cardAnimation} className={styles.card}>
+    <div id={id} ref={ref} style={{transition: transition, transform: `perspective(1000px) rotateX(${xPos}deg) rotateY(${yPos}deg) scale3d(1, 1, 1)`}} onMouseLeave={mouseLeave} onMouseEnter={mouseEnter} onMouseMove={cardAnimation} className={styles.card}>
     <div className={styles.insideCard}>
       {children}
     </div>

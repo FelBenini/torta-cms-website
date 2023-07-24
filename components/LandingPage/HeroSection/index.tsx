@@ -23,7 +23,7 @@ const HeroSection = () => {
         </a>
       </div>
       <p>Build your blog with <b>tortaCMS</b> and your favorite <b>framework</b></p>
-      <div className={styles.frameworks}>
+      <div id='frameworksSection' className={styles.frameworks}>
         <Image src='/frameworks/react.svg' alt='React logo' width={32} height={32}/>
         <Image src='/frameworks/nextjs.svg' alt='Next' width={26} height={26}/>
         <Image src='/frameworks/remix.svg' alt='Remix' width={24} height={24}/>
