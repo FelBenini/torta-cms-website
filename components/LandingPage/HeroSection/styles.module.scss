@@ -50,7 +50,10 @@
     justify-content: space-between;
     align-items: center;
     width: 50%;
+    padding: 0 25%;
+    padding-bottom: 44px;
     margin-top: 40px;
+    background: linear-gradient(to top, #141314, transparent);
     & .svelte {
       filter: grayscale(1) contrast(0.8) brightness(1.2);
       transition: all ease 0.2s;
