@@ -17,6 +17,12 @@ html {
   font-size: 100%;
 }
 
+@media (max-width: 600px) {
+  html {
+    font-size: 75%;
+  }
+}
+
 h1,
 h2,
 h3,

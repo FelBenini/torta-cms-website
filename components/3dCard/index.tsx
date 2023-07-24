@@ -21,7 +21,7 @@ const Card = ({children, id}: {children: React.ReactNode, id: string}) => {
     e.currentTarget.style.setProperty("--mouse-x", `${e.clientX - rect.left}px`)
     e.currentTarget.style.setProperty("--mouse-y", `${e.clientY - rect.top}px`)
     setXPos(-x / 25)
-    setYPos(-y / 25)
+    setYPos(y / 15)
   }
   const mouseEnter = () => {
     setTimeout(() => {
