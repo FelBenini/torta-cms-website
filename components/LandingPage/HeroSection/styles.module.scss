@@ -152,6 +152,29 @@
   }
 }
 
+@for $i from 1 through 10 {
+  .fade:nth-child(#{$i}n) {
+      animation-delay: #{$i * 0.08}s;
+  }
+}
+
+.fade {
+  opacity: 0;
+  animation: FadeIn 1s cubic-bezier(1,.02,.27,.57);
+  animation-fill-mode: forwards;
+}
+
+@keyframes FadeIn { 
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px) translateY(0px);
+  }
+}
+
 @media (max-width: 600px) {
   .heroSection {
     & h1 {
