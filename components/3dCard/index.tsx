@@ -16,12 +16,12 @@ const Card = ({children, id}: {children: React.ReactNode, id: string}) => {
     const rect = e.currentTarget.getBoundingClientRect();
     const width = e.currentTarget.offsetWidth / 2;
     const height = e.currentTarget.offsetHeight / 2;
-    const x = e.clientX - rect.left - width;
+    const x = e.clientX - rect.left - height;
     const y = e.clientY - rect.top - height;
     e.currentTarget.style.setProperty("--mouse-x", `${e.clientX - rect.left}px`)
     e.currentTarget.style.setProperty("--mouse-y", `${e.clientY - rect.top}px`)
-    setXPos(x / 20)
-    setYPos(y / 20)
+    setXPos(-x / 25)
+    setYPos(-y / 25)
   }
   const mouseEnter = () => {
     setTimeout(() => {
@@ -29,7 +29,7 @@ const Card = ({children, id}: {children: React.ReactNode, id: string}) => {
     }, 450)
   }
   return (
-    <div id={id} ref={ref} style={{transition: transition, transform: `perspective(1000px) rotateX(${xPos}deg) rotateY(${yPos}deg) scale3d(1, 1, 1)`}} onMouseLeave={mouseLeave} onMouseEnter={mouseEnter} onMouseMove={cardAnimation} className={styles.card}>
+    <div id={id} ref={ref} style={{transition: transition, transform: `perspective(1000px) rotateX(${yPos}deg) rotateY(${xPos}deg) scale3d(1, 1, 1)`}} onMouseLeave={mouseLeave} onMouseEnter={mouseEnter} onMouseMove={cardAnimation} className={styles.card}>
     <div className={styles.insideCard}>
       {children}
     </div>
