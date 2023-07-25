@@ -180,6 +180,13 @@
     & h1 {
       font-size: calc(3rem + 5vw);
     }
+    & .inline {
+      justify-content: space-around;
+      width: 100%;
+    }
+    & .getStartedButton {
+      margin-right: 0px;
+    }
     .logoContainer {
       width: calc(30px + 12vw);
     }
