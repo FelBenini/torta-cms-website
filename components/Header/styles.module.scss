@@ -1,15 +1,20 @@
 .header {
   width: 100%;
   position: fixed;
-  background-color: #0f0e1033;
-  backdrop-filter: blur(32px);
+  background-color: #0f0e102c;
+  backdrop-filter: blur(36px);
   z-index: 99;
   height: 52px;
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #beb8c359;
   justify-content: space-around;
-  & #headerLogo {
+  & .icon {
     text-decoration: none;
+    width: fit-content;
+    height: fit-content;
+    display: block;
+    line-height: normal;
     &:hover {
       filter: saturate(30);
     }

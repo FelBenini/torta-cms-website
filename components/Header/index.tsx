@@ -19,7 +19,7 @@ const Header = () => {
           <Link href='/about'>About</Link>
           <Link href='/themes'>Themes</Link>
         </div>
-        <Link id={styles.headerLogo} href='/'>
+        <Link className={styles.icon} href='/'>
           <h5><Image src='/torta-b&w.svg' alt='torta cms icon in grayscale' width={48} height={48} /> tortaCMS</h5>
         </Link>
         <div>
@@ -27,8 +27,12 @@ const Header = () => {
             <input type='text' placeholder='Search the website...' />
             <button type='submit'><FiSearch color='#BEB8C3' size={20} /></button>
           </form>
-          <BsTwitter size={28} />
-          <BsGithub size={28} />
+          <a href='/' className={styles.icon}>
+            <BsTwitter size={28} />
+          </a>
+          <a href='https://github.com/FelBenini/torta-cms' className={styles.icon} target='blank'>
+            <BsGithub size={28} />
+          </a>
         </div>
       </nav>
     </header>

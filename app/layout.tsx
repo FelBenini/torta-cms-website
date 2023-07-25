@@ -25,8 +25,9 @@ export default function RootLayout({
 
     const handleAnchorClick = (event: MouseEvent) => {
       const targetUrl = new URL((event.currentTarget as HTMLAnchorElement).href);
+      const targetPage = (event.currentTarget as HTMLAnchorElement).target
       const currentUrl = new URL(location.href);
-      if (targetUrl !== currentUrl && targetUrl.hostname === currentUrl.hostname && targetUrl.pathname !== currentUrl.pathname) {
+      if (targetUrl !== currentUrl && targetUrl.hostname === currentUrl.hostname && targetUrl.pathname !== currentUrl.pathname && targetPage !== 'blank') {
         NProgress.start();
       }
     };
