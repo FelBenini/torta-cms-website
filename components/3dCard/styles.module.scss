@@ -16,6 +16,7 @@
       opacity: 1;
     }
     &::before {
+      pointer-events: none;
       background: radial-gradient(
         800px circle at var(--mouse-x) var(--mouse-y), 
         rgba(209, 255, 249, 0.06),
