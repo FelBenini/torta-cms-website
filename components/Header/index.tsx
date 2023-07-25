@@ -19,7 +19,9 @@ const Header = () => {
           <Link href='/about'>About</Link>
           <Link href='/themes'>Themes</Link>
         </div>
-        <h5><Image src='/torta-b&w.svg' alt='torta cms icon in grayscale' width={48} height={48}/> tortaCMS</h5>
+        <Link id={styles.headerLogo} href='/'>
+          <h5><Image src='/torta-b&w.svg' alt='torta cms icon in grayscale' width={48} height={48} /> tortaCMS</h5>
+        </Link>
         <div>
           <form onSubmit={handleSearch}>
             <input type='text' placeholder='Search the website...' />

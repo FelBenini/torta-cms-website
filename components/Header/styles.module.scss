@@ -8,6 +8,12 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  & #headerLogo {
+    text-decoration: none;
+    &:hover {
+      filter: saturate(30);
+    }
+  }
   & nav {
     width: 100%;
     max-width: 1100px;
