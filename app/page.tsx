@@ -1,6 +1,7 @@
 import About from '@/components/LandingPage/About'
 import HeroSection from '../components/LandingPage/HeroSection'
 import Connector from '@/components/Connector'
+import Database from '@/components/LandingPage/Database'
 
 export const metadata = {
   title: 'tortaCMS',
@@ -11,9 +12,11 @@ export default function Home() {
   return (
     <>
       <HeroSection />
-      <Connector start={'frameworksSection'} end='cardAbout' />
+      <Connector start='frameworksSection' end='cardAbout' />
       <div className='darkened'>
         <About />
+        <Connector start='cardAbout' end='databaseIllustration' />
+        <Database />
       </div>
     </>
   )
