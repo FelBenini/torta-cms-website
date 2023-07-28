@@ -84,3 +84,14 @@
     }
   }
 }
+
+@media (max-width: 1000px) {
+  .header {
+    & nav {
+      padding: 12px;
+    }
+    & div:nth-child(1) {
+      display: none;
+    }
+  }
+}
