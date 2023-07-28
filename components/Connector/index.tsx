@@ -4,7 +4,7 @@ import Xarrow from "react-xarrows";
 
 const Connector = ({start, end}: {start: string, end: string}) => {
   return (
-    <Xarrow start={start} end={end} endAnchor='top' startAnchor='bottom' path='grid' headSize={0} animateDrawing={true} color='#706C72' />
+    <Xarrow start={start} end={end} endAnchor='top' startAnchor='bottom' path='smooth' headSize={0} animateDrawing={true} color='#706C72' />
   )
 }
 
