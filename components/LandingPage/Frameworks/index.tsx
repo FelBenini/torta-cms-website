@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './styles.module.scss'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const frameworks = [
   {name: 'React', src: '/frameworks/react.svg'},
@@ -39,6 +40,9 @@ const FrameworksSection = () => {
           })}
         </div>
       </div>
+      <Link href='#' className={styles.button}>
+        <button>Explore Starter Themes</button>
+      </Link>
     </section>
   )
 }
