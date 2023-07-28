@@ -96,3 +96,12 @@
     margin-top: 1rem;
   }
 }
+
+@media (max-width: 600px) {
+  .aboutSection {
+    padding: 64px 0px;
+    & .description {
+      margin-top: 32px;
+    }
+  }
+}
