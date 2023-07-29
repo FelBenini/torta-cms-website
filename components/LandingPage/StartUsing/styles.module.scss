@@ -1,0 +1,36 @@
+.startUsignSection {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  & .container {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    & button {
+      border: none;
+      padding: 1.3rem 1.5rem;
+      font-size: 1.2rem;
+      cursor: pointer;
+      color: #F1EBE7;
+      font-weight: 600;
+      border-radius: 4px;
+      margin-top: 2.6rem;
+      filter: brightness(1) saturate(1);
+      transition: all ease-in-out 0.2s;
+      box-shadow: 0px 4px 8px rgba(22, 17, 21, 0.13);
+      &:hover {
+        filter: brightness(1.2) saturate(1.2);
+        transform: translateY(-2px);
+        box-shadow: 0px 4px 8px rgba(22, 17, 21, 0.76);
+      }
+    }
+  }
+  & h1 {
+    & b {
+      font-size: 3.252rem;
+      font-weight: 800;
+      -webkit-background-clip: text;
+      background-clip: text;
+    }
+  }
+}
