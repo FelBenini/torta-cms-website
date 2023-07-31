@@ -10,7 +10,7 @@ const HeroSection = () => {
   return (
     <section className={styles.heroSection}>
       <div className={styles.titleContainer + ' ' + styles.fade}>
-        <div className={styles.logoContainer}><Image src='/torta-logo.svg' layout='fill' alt='torta cms logo pie icon' /></div>
+        <div className={styles.logoContainer}><Image src='/torta-logo.svg' fill={true} alt='torta cms logo pie icon' /></div>
         <h1>tortaCMS</h1>
       </div>
       <h4 className={styles.fade}>The headless CMS that got your back(end)!</h4>
