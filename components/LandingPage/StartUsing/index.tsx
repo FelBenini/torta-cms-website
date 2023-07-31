@@ -53,8 +53,8 @@ const StartUsing = () => {
           <button style={{background: `linear-gradient(to top left, ${colors.primary}, ${colors.secondary})`}}>See the Installation Guide</button>
         </div>
         <div className={styles.tortaLogo}>
-        <Image src={src} alt='tortaCMS logo' layout='fill' />
-      </div>
+          <Image src={src} alt='tortaCMS logo' layout='fill' />
+        </div>
       </div>
     </section>
   )
