@@ -5,6 +5,7 @@ import NProgress from "nprogress";
 import { useEffect } from 'react'
 import './globals.scss'
 import { Inter } from 'next/font/google'
+import Footer from '@/components/Footer';
 
 type PushStateInput = [
   data: any,
@@ -58,6 +59,7 @@ export default function RootLayout({
         <main>
           {children}
         </main>
+        <Footer />
       </body>
     </html>
   )
