@@ -1,0 +1,42 @@
+.aboutSection {
+  margin: 0 auto;
+  padding-bottom: 2rem;
+  width: 100%;
+  min-height: calc(100dvh - 60px);
+  background-image:
+    radial-gradient(at 0% 100%, hsla(313, 81%, 50%, 0.212) 0px, transparent 50%);
+  & div {
+    max-width: 100%;
+    margin: 0 auto;
+    width: 850px;
+  }
+  & p {
+    margin: 1rem;
+    opacity: 0.9;
+  }
+  & h1, & h2 {
+    font-weight: bold;
+    margin: 0.5rem;
+    margin-top: 2rem;
+  }
+  & strong {
+    font-weight: 800;
+    color: #EB6CF2;
+  }
+  & h4 {
+    font-weight: bold;
+    margin: 0.5rem;
+    margin-top: 2rem;
+  }
+  & ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 1rem;
+    padding-left: 0px;
+    align-items: center;
+    & li {
+      width: fit-content;
+    }
+  }
+}
