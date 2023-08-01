@@ -1,8 +1,8 @@
 import React from 'react'
-import { serialize } from 'next-mdx-remote/serialize'
 import { MDXRemote } from 'next-mdx-remote/rsc'
 import styles from './styles.module.scss'
 import Link from 'next/link'
+import rehypeHighlight from 'rehype-highlight';
 
 export const revalidate = 10
 
@@ -22,7 +22,16 @@ const About = async () => {
     <section className={styles.aboutSection}>
       <div>
         <h1>{post.title}</h1>
-        <MDXRemote components={components} source={post.content}/>
+        <MDXRemote 
+        source={post.content}
+        components={components}
+        options={{
+          mdxOptions: {
+            remarkPlugins: [],
+            rehypePlugins: [rehypeHighlight],
+          }
+        }}
+        />
       </div>
     </section>
   )
