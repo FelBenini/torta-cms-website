@@ -21,7 +21,7 @@ const About = async () => {
   return (
     <section className={styles.aboutSection}>
       <div>
-        <h1>{post.title}</h1>
+        <h2>{post.title}</h2>
         <MDXRemote 
         source={post.content}
         components={components}
