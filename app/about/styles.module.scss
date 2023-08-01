@@ -3,6 +3,7 @@
   padding-bottom: 2rem;
   width: 100%;
   min-height: calc(100dvh - 60px);
+  background-attachment: fixed;
   background-image:
     radial-gradient(at 0% 100%, hsla(313, 81%, 50%, 0.212) 0px, transparent 50%);
   & div {
