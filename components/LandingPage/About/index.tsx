@@ -7,6 +7,7 @@ import { AiOutlineApi } from 'react-icons/ai'
 import { PiLightningBold } from 'react-icons/pi'
 import { BiGitBranch } from 'react-icons/bi'
 import { TbPuzzleFilled } from 'react-icons/tb'
+import Link from 'next/link'
 
 const About = () => {
   return (
@@ -23,7 +24,7 @@ const About = () => {
       </Card>
       <div className={styles.description}>
         <h2>What is tortaCMS?</h2>
-        <p>tortaCMS is a content management system that makes it easier for developers to bootstrap a full-stack blog! All you need is NodeJS and a database!</p>
+        <p>tortaCMS is a content management system that makes it easier for developers to bootstrap a full-stack blog! All you need is NodeJS and a database! <Link href='/about'>Learn more</Link></p>
         <hr/>
         <div className={styles.listage}>
           <span>
