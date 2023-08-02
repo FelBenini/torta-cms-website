@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './styles.module.scss'
 import MarkdownParser from '@/components/Markdown'
+import Image from 'next/image'
 
 export const revalidate = 10
 
@@ -24,6 +25,7 @@ const About = async () => {
     <section className={styles.aboutSection}>
       <div>
         <h2>{post.title}</h2>
+        <Image src={post.backgroundImage} width={400} height={150} alt='tortaCMS logo' style={{margin: '1.5rem auto', display: 'block'}}/>
         <MarkdownParser source={post.content} />
       </div>
     </section>
