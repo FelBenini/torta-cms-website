@@ -4,6 +4,14 @@ import MarkdownParser from '@/components/Markdown'
 
 export const revalidate = 10
 
+export async function generateMetadata() {
+  const res = await fetchContent()
+  return {
+    title: res.title,
+    description: res.summary
+  }
+}
+
 const fetchContent = async () => {
   const res = await fetch(`${process.env.TORTACMS_HOST}/api/page/About-tortaCMS`)
   const json = await res.json()
