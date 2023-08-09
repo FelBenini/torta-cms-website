@@ -1,0 +1,25 @@
+.active {
+    color: #ee60f6;
+    background-color: #fba9ff20;
+    transition: all ease 0.2s;
+}
+
+.inactive {
+    color: #cfccd3;
+    transition: all ease 0.2s;
+    &:hover {
+        color: #ee60f6;
+    }
+}
+
+.active, .inactive {
+    text-decoration: none;
+    width: calc(100% - 20px);
+    font-weight: 400;
+    font-size: 0.8rem;
+    display: block;
+    padding: 8px;
+    line-height: 1.6rem;
+    border-radius: 4px;
+    margin-top: 6px;
+}

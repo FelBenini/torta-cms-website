@@ -11,7 +11,10 @@ const DocsLayout = ({
     <div className={styles.docsLayout}>
     <aside>
         <h5>Getting started</h5>
-        <MenuLink title='installation' url='/docs/quick-start' />
+        <MenuLink title='Quick Start' url='/docs/quick-start' />
+        <MenuLink title='Installation with MongoDB' url='/docs/mongo-istallation' />
+        <MenuLink title='Installation with Postgres' url='/docs/postgres-installation' />
+        <MenuLink title='Installation with MySQL' url='/docs/mysql-installation' />
     </aside>
     <section>
       {children}

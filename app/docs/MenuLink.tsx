@@ -2,19 +2,20 @@
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import { usePathname } from 'next/navigation'
+import styles from './menulink.module.scss'
 
 const MenuLink = ({title, url}: {
     title: string,
     url: string
 }) => {
-    const [activeState, setActiveState] = useState('inactive')
+    const [activeState, setActiveState] = useState(styles.inactive)
     const pathname = usePathname()
 
     useEffect(() => {
         if (pathname === url) {
-            setActiveState('active')
+            setActiveState(styles.active)
         } else {
-            setActiveState('inactive')
+            setActiveState(styles.inactive)
         }
     }, [pathname, url])
 

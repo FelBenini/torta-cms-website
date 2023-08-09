@@ -8,9 +8,15 @@
         top: 52px;
         min-height: calc(100dvh - 46px);
         height: fit-content;
-        border-right: #524f568e 1px solid;
         width: calc(200px + 5%);
-        padding: 10px;
-        background-color: #1f1d20;
+        padding-left: 10px;
+        padding-right: 12px;
+        & h5 {
+            font-size: 1rem;
+            font-weight: 800;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            padding-left: 6px;
+        }
     }
 }
