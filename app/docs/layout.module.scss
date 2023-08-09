@@ -1,0 +1,16 @@
+.docsLayout {
+    display: flex;
+    flex-direction: row;
+    height: 200dvh;
+    & aside {
+        position: sticky;
+        position: -webkit-sticky;
+        top: 52px;
+        min-height: calc(100dvh - 46px);
+        height: fit-content;
+        border-right: #524f568e 1px solid;
+        width: calc(200px + 5%);
+        padding: 10px;
+        background-color: #1f1d20;
+    }
+}
