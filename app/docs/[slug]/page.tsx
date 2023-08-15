@@ -16,6 +16,9 @@ const fetchData = async (slug: string) => {
     return null
   }
   const data = await res.json()
+  if (!data.categories.includes('docs')) {
+    return null
+  }
   return data
 }
 
