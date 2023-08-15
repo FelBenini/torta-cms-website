@@ -1,4 +1,5 @@
 import MarkdownParser from '@/components/Markdown'
+import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import React from 'react'
 
@@ -20,6 +21,14 @@ const fetchData = async (slug: string) => {
     return null
   }
   return data
+}
+
+export async function generateMetadata(props: Props): Promise<Metadata> {
+  const data = await fetchData(props.params.slug)
+  return {
+    title: data.title + ' - tortaCMS Docs' ,
+    description: data.summary
+  }
 }
 
 const DocPage = async (props: Props) => {
