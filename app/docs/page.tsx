@@ -1,9 +1,7 @@
-import React from 'react'
+import { redirect } from 'next/navigation'
 
 const Docs = () => {
-  return (
-    <div>Docs</div>
-  )
+  redirect('/docs/quick-start')
 }
 
 export default Docs
