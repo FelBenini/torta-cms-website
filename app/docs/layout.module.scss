@@ -1,8 +1,24 @@
 .docsLayout {
     display: flex;
     flex-direction: row;
-    height: 200dvh;
     background-color: #141314;
+
+    & section {
+        width: calc(70% - 160px);
+        margin-left: 5%;
+        padding-bottom: 10dvh;
+        padding-top: 4dvh;
+
+        & p,
+        & h1,
+        & h2,
+        & h3,
+        & h4 {
+            margin-top: 1.3rem;
+            margin-bottom: 1.3rem;
+        }
+    }
+
     & aside {
         position: sticky;
         position: -webkit-sticky;
@@ -15,6 +31,7 @@
         background-color: #1c191e;
         padding-right: 12px;
         border-right: 1px solid #d2d2d24c;
+
         & h5 {
             font-size: 1rem;
             font-weight: 800;
