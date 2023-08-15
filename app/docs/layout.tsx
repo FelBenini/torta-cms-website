@@ -1,6 +1,8 @@
 import React from 'react'
 import styles from './layout.module.scss'
 import MenuLink from './MenuLink'
+import { BiLogoDocker } from 'react-icons/bi'
+import { AiFillApi, AiOutlineCaretRight } from 'react-icons/ai'
 
 const DocsLayout = ({
     children,
@@ -10,11 +12,17 @@ const DocsLayout = ({
   return (
     <div className={styles.docsLayout}>
     <aside>
-        <h5>Getting started</h5>
+        <h5><AiOutlineCaretRight size={20} style={{marginBottom: -4, marginLeft: -4}} /> Getting started</h5>
         <MenuLink title='Quick Start' url='/docs/quick-start' />
         <MenuLink title='Installation with MongoDB' url='/docs/mongo-istallation' />
         <MenuLink title='Installation with Postgres' url='/docs/postgres-installation' />
         <MenuLink title='Installation with MySQL' url='/docs/mysql-installation' />
+        <h5><BiLogoDocker size={24} style={{marginBottom: -6}} /> Docker</h5>
+        <MenuLink title='Docker Images' url='/docs/docker-images' />
+        <h5><AiFillApi size={20} style={{marginBottom: -4}} /> API Implementation</h5>
+        <MenuLink title='Quick Guide' url='/docs/docker-images' />
+        <MenuLink title='Retrieving Posts' url='/docs/docker-images' />
+        <MenuLink title='Retrieving Pages' url='/docs/docker-images' />
     </aside>
     <section>
       {children}
