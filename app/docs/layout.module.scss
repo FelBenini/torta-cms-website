@@ -9,6 +9,11 @@
         padding-bottom: 10dvh;
         padding-top: 4dvh;
 
+        & .bigHeader {
+            margin-bottom: 6dvh;
+            font-weight: 600;
+        }
+
         & strong {
             color: #f06cf7;
         }

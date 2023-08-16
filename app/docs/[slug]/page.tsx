@@ -2,6 +2,7 @@ import MarkdownParser from '@/components/Markdown'
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import React from 'react'
+import styles from '../layout.module.scss'
 
 export const revalidate = 10
 
@@ -26,7 +27,7 @@ const fetchData = async (slug: string) => {
 export async function generateMetadata(props: Props): Promise<Metadata> {
   const data = await fetchData(props.params.slug)
   return {
-    title: data.title + ' - tortaCMS Docs' ,
+    title: data.title + ' - tortaCMS Docs',
     description: data.summary
   }
 }
@@ -37,7 +38,10 @@ const DocPage = async (props: Props) => {
     return notFound()
   }
   return (
-    <MarkdownParser source={data.content} />
+    <>
+      <h1 className={styles.bigHeader}>{data.title}</h1>
+      <MarkdownParser source={data.content} />
+    </>
   )
 }
 
