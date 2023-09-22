@@ -32,6 +32,24 @@ html {
   }
 }
 
+@media (min-width: 601px) {
+  ::-webkit-scrollbar {
+    background-color: #12121a;
+    width: 7px;
+    height: 4px;
+  } 
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #40424d;
+    color: #40424d;
+    border-radius: 12px;
+  }
+
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+}
+
 h1,
 h2,
 h3,
