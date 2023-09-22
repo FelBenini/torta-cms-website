@@ -26,6 +26,12 @@ const fetchData = async (slug: string) => {
 
 export async function generateMetadata(props: Props): Promise<Metadata> {
   const data = await fetchData(props.params.slug)
+  if (!data) {
+    return {
+      title: "tortaCMS - Page not found",
+      description: "This page does not exist, check if the URL is correct"
+    }
+  }
   return {
     title: data.title + ' - tortaCMS Docs',
     description: data.summary
@@ -34,6 +40,7 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
 
 const DocPage = async (props: Props) => {
   const data = await fetchData(props.params.slug)
+  console.log(data)
   if (!data) {
     return notFound()
   }
